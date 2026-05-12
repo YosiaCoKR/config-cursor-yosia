@@ -1,0 +1,250 @@
+{
+  // ============================================
+  // 🤖 CURSOR AI & WORKFLOW BOOST (NEW)
+  // ============================================
+  // Memaksimalkan fitur AI bawaan Cursor
+  "cursor.cpp.enablePartialAccepts": true, // Memungkinkan accept sebagian suggest AI dengan Ctrl/Cmd + Right Arrow
+  "cursor.terminal.cmdK": true, // Aktifkan AI di terminal
+  "editor.inlineSuggest.enabled": true, // Wajib ON untuk Cursor Tab
+  "cursor.general.showAiHints": false, // Matikan hint UI yang kadang mengganggu
+  "cursor.chat.showProjectContext": true, // Otomatis index codebase untuk Chat
+
+  // ============================================
+  // 🌌 VISUAL CORE (SynthWave84 + Manual Neon Boost)
+  // ============================================
+  "workbench.colorTheme": "SynthWave84",
+  "workbench.iconTheme": "simple-icons",
+  "glassit.alpha": 230,
+  "workbench.colorCustomizations": {
+    "[SynthWave84]": {
+      "editor.lineHighlightBackground": "#2b004655",
+      "editor.lineHighlightBorder": "#ff00ee44",
+      "tab.activeBorder": "#fffb00",
+      "tab.activeForeground": "#fffb00",
+      "editor.selectionBackground": "#ffffff30",
+      "terminalCursor.foreground": "#ff00ee"
+    }
+  },
+
+  // ============================================
+  // ⌨️ TYPOGRAPHY (Clean & Expensive)
+  // ============================================
+  "editor.fontFamily": "'JetBrains Mono', 'FiraCode Nerd Font', Consolas, monospace",
+  "editor.autoIndent": "advanced",
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.lineHeight": 29,
+  "editor.fontWeight": "450",
+  "editor.letterSpacing": 0.6,
+  "editor.fontSmoothing": "antialiased",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#6b7a8f"
+        }
+      },
+      {
+        "scope": "keyword",
+        "settings": {
+          "fontStyle": "italic bold"
+        }
+      }
+    ]
+  },
+
+  // ============================================
+  // 🛸 IMMERSIVE UI (Zero Distraction)
+  // ============================================
+  "window.titleBarStyle": "custom",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontal": "hidden",
+  "workbench.tree.indent": 22,
+  "workbench.tree.renderIndentGuides": "always",
+  "explorer.compactFolders": false,
+
+  // ============================================
+  // ✨ ANIMATION & GLOW
+  // ============================================
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 2,
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.renderLineHighlight": "all",
+
+  // ============================================
+  // ⚡ FORMATTING & PRETTIER (Universal)
+  // ============================================
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairsHorizontal": "active",
+
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+
+  // ============================================
+  // 🎨 TAILWIND CSS & NPM BOOST
+  // ============================================
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "javascript": "javascriptreact"
+  },
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "on"
+  },
+  "npm.fetchOnlinePackageInfo": true,
+
+  // ============================================
+  // 🐘 LARAVEL / PHP (Intelephense)
+  // ============================================
+  "php.suggest.basic": false,
+  "php.validate.enable": true,
+  "intelephense.environment.documentRoot": "public",
+
+  // ============================================
+  // 🐍 PYTHON & ML BOOST
+  // ============================================
+  "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.indexing": true,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.userFileIndexingLimit": 2000,
+  "vsintellicode.python.completionsEnabled": true, // Bisa dimatikan jika merasa tabrakan dengan Cursor Tab
+
+  "jdk.jdkhome": "c:\\oracleJdk-25",
+  "[java]": {
+    "editor.defaultFormatter": "Oracle.oracle-java"
+  },
+
+  // ============================================
+  // 🌐 TRANSLATE & HOVER
+  // ============================================
+  "commentTranslate.targetLanguage": "id",
+  "commentTranslate.hover.enabled": true,
+  "editor.hover.enabled": "on",
+  "editor.hover.delay": 300,
+  "editor.parameterHints.enabled": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.inlayHints.padding": true,
+
+  // ============================================
+  // 🖥️ SYSTEM & TERMINAL (Windows Paths Kept)
+  // ============================================
+  "workbench.sideBar.location": "right",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font', Consolas",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.gpuAcceleration": "on",
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.shellIntegration.enabled": false,
+
+  // ============================================
+  // 🚀 PRODUCTIVITY & WORKFLOW
+  // ============================================
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml",
+    ".env": ".env.*",
+    "tailwind.config.js": "tailwind.config.*, postcss.config.*",
+    "next.config.js": "next-env.d.ts, tsconfig.json, jsconfig.json, .eslintrc.json",
+    "*.ts": "${capture}.js, ${capture}.d.ts",
+    "*.tsx": "${capture}.ts, ${capture}.js",
+    "*.jsx": "${capture}.js",
+    "composer.json": "composer.lock"
+  },
+
+  "editor.linkedEditing": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "blade": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+
+  // ============================================
+  // 🐙 GIT & SOURCE CONTROL
+  // ============================================
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+
+  // ============================================
+  // 🐍 AUTO CLOSE TAG
+  // ============================================
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "cfml",
+    "HTML (Eex)"
+  ],
+
+  // ============================================
+  // 🎯 CODING COMFORT & ANTI-PUSING
+  // ============================================
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.maxLineCount": 5,
+  "editor.wordWrap": "on",
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
+  "editor.dragAndDrop": false,
+  "explorer.confirmDelete": false,
+
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "path": "C:\\Users\\rosea\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": { "id": "terminal-cmd" }
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "icon": "terminal-git-bash"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  }
+}
