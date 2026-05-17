@@ -14,7 +14,6 @@
   // ============================================
   "workbench.colorTheme": "SynthWave84",
   "workbench.iconTheme": "simple-icons",
-  "glassit.alpha": 230,
   "workbench.colorCustomizations": {
     "[SynthWave84]": {
       "editor.lineHighlightBackground": "#2b004655",
@@ -22,8 +21,8 @@
       "tab.activeBorder": "#fffb00",
       "tab.activeForeground": "#fffb00",
       "editor.selectionBackground": "#ffffff30",
-      "terminalCursor.foreground": "#ff00ee"
-    }
+      "terminalCursor.foreground": "#ff00ee",
+    },
   },
 
   // ============================================
@@ -45,16 +44,16 @@
         "scope": "comment",
         "settings": {
           "fontStyle": "italic",
-          "foreground": "#6b7a8f"
-        }
+          "foreground": "#6b7a8f",
+        },
       },
       {
         "scope": "keyword",
         "settings": {
-          "fontStyle": "italic bold"
-        }
-      }
-    ]
+          "fontStyle": "italic bold",
+        },
+      },
+    ],
   },
 
   // ============================================
@@ -105,12 +104,12 @@
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.includeLanguages": {
     "plaintext": "html",
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
   },
   "editor.quickSuggestions": {
     "other": "on",
     "comments": "off",
-    "strings": "on"
+    "strings": "on",
   },
   "npm.fetchOnlinePackageInfo": true,
 
@@ -124,7 +123,7 @@
   // ============================================
   // 🐍 PYTHON & ML BOOST
   // ============================================
-  "python.languageServer": "Pylance",
+  "python.languageServer": "None",
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.completeFunctionParens": true,
@@ -135,7 +134,7 @@
 
   "jdk.jdkhome": "c:\\oracleJdk-25",
   "[java]": {
-    "editor.defaultFormatter": "Oracle.oracle-java"
+    "editor.defaultFormatter": "Oracle.oracle-java",
   },
 
   // ============================================
@@ -175,13 +174,13 @@
     "*.ts": "${capture}.js, ${capture}.d.ts",
     "*.tsx": "${capture}.ts, ${capture}.js",
     "*.jsx": "${capture}.js",
-    "composer.json": "composer.lock"
+    "composer.json": "composer.lock",
   },
 
   "editor.linkedEditing": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
-    "blade": "html"
+    "blade": "html",
   },
   "emmet.triggerExpansionOnTab": true,
 
@@ -211,7 +210,7 @@
     "liquid",
     "erb",
     "cfml",
-    "HTML (Eex)"
+    "HTML (Eex)",
   ],
 
   // ============================================
@@ -222,29 +221,32 @@
   "editor.wordWrap": "on",
   "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
+    "source.organizeImports": "explicit",
   },
   "editor.dragAndDrop": false,
   "explorer.confirmDelete": false,
 
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
-      "path": "C:\\Users\\rosea\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+      "path": "C:\\Users\\rosea\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe",
     },
     "Command Prompt": {
       "path": [
         "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
+        "${env:windir}\\System32\\cmd.exe",
       ],
       "args": [],
-      "icon": { "id": "terminal-cmd" }
+      "icon": { "id": "terminal-cmd" },
     },
     "Git Bash": {
       "source": "Git Bash",
-      "icon": "terminal-git-bash"
+      "icon": "terminal-git-bash",
     },
     "Windows PowerShell": {
-      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-    }
-  }
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    },
+  },
+  "cursorpyright.analysis.autoImportCompletions": true,
+  "cursorpyright.analysis.diagnosticMode": "workspace",
+  "cursorpyright.analysis.typeCheckingMode": "basic",
 }
