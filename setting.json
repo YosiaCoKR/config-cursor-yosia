@@ -1,18 +1,18 @@
 {
   // ============================================
-  // 🤖 CURSOR AI & WORKFLOW BOOST (NEW)
+  // 🤖 CURSOR AI & WORKFLOW BOOST
   // ============================================
-  // Memaksimalkan fitur AI bawaan Cursor
-  "cursor.cpp.enablePartialAccepts": true, // Memungkinkan accept sebagian suggest AI dengan Ctrl/Cmd + Right Arrow
-  "cursor.terminal.cmdK": true, // Aktifkan AI di terminal
-  "editor.inlineSuggest.enabled": true, // Wajib ON untuk Cursor Tab
-  "cursor.general.showAiHints": false, // Matikan hint UI yang kadang mengganggu
-  "cursor.chat.showProjectContext": true, // Otomatis index codebase untuk Chat
+  "cursor.cpp.enablePartialAccepts": true,
+  "cursor.terminal.cmdK": true,
+  "editor.inlineSuggest.enabled": true,
+  "cursor.general.showAiHints": false,
+  "cursor.chat.showProjectContext": true,
+  "vsintellicode.python.completionsEnabled": false,
 
   // ============================================
   // 🌌 VISUAL CORE (SynthWave84 + Manual Neon Boost)
   // ============================================
-  "workbench.colorTheme": "SynthWave84",
+  "workbench.colorTheme": "SynthWave '84",
   "workbench.iconTheme": "simple-icons",
   "workbench.colorCustomizations": {
     "[SynthWave84]": {
@@ -21,8 +21,8 @@
       "tab.activeBorder": "#fffb00",
       "tab.activeForeground": "#fffb00",
       "editor.selectionBackground": "#ffffff30",
-      "terminalCursor.foreground": "#ff00ee",
-    },
+      "terminalCursor.foreground": "#ff00ee"
+    }
   },
 
   // ============================================
@@ -44,16 +44,16 @@
         "scope": "comment",
         "settings": {
           "fontStyle": "italic",
-          "foreground": "#6b7a8f",
-        },
+          "foreground": "#6b7a8f"
+        }
       },
       {
         "scope": "keyword",
         "settings": {
-          "fontStyle": "italic bold",
-        },
-      },
-    ],
+          "fontStyle": "italic bold"
+        }
+      }
+    ]
   },
 
   // ============================================
@@ -81,13 +81,14 @@
   "editor.renderLineHighlight": "all",
 
   // ============================================
-  // ⚡ FORMATTING & PRETTIER (Universal)
+  // ⚡ FORMATTING (Per-Language, No Conflict)
   // ============================================
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
   "files.autoSave": "afterDelay",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairsHorizontal": "active",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -98,18 +99,121 @@
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.formatOnSave": true
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+    "editor.formatOnSave": true
+  },
+
+  "[java]": {
+    "editor.defaultFormatter": "Oracle.oracle-java"
+  },
+
   // ============================================
-  // 🎨 TAILWIND CSS & NPM BOOST
+  // 🔍 INTELLISENSE & AUTOCOMPLETE (Rich Suggestions)
+  // ============================================
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.quickSuggestionsDelay": 0,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.suggest.preview": true,
+  "editor.suggest.showInlineDetails": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.tabCompletion": "on",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "on"
+  },
+
+  // ============================================
+  // 🐍 PYTHON & ML — cursorpyright + rich hints
+  // ============================================
+  "python.languageServer": "None",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+
+  "cursorpyright.analysis.autoImportCompletions": true,
+  "cursorpyright.analysis.completeFunctionParens": true,
+  "cursorpyright.analysis.diagnosticMode": "workspace",
+  "cursorpyright.analysis.typeCheckingMode": "basic",
+  "cursorpyright.analysis.indexing": true,
+  "cursorpyright.analysis.userFileIndexingLimit": 2000,
+  "cursorpyright.analysis.inlayHints.variableTypes": true,
+  "cursorpyright.analysis.inlayHints.functionReturnTypes": true,
+  "cursorpyright.analysis.inlayHints.callArgumentNames": true,
+
+  // ============================================
+  // 🐹 GOLANG — gopls full docs + placeholders
+  // ============================================
+  "go.useLanguageServer": true,
+  "go.toolsManagement.autoUpdate": true,
+  "go.autocompleteUnimportedPackages": true,
+  "go.lintTool": "golangci-lint",
+  "go.lintOnSave": "workspace",
+  "go.vetOnSave": "workspace",
+  "go.formatTool": "goimports",
+  "go.testFlags": ["-v", "-count=1"],
+  "go.coverOnSave": false,
+  "go.inlayHints.assignVariableTypes": true,
+  "go.inlayHints.compositeLiteralFields": true,
+  "go.inlayHints.parameterNames": true,
+  "gopls": {
+    "ui.completion.usePlaceholders": true,
+    "ui.documentation.hoverKind": "FullDocumentation",
+    "ui.completion.experimentalPostfixCompletions": true,
+    "hints.assignVariableTypes": true,
+    "hints.compositeLiteralFields": true,
+    "hints.compositeLiteralTypes": true,
+    "hints.constantValues": true,
+    "hints.functionTypeParameters": true,
+    "hints.parameterNames": true,
+    "hints.rangeVariableTypes": true
+  },
+
+  // ============================================
+  // 🌐 JAVASCRIPT & TYPESCRIPT — full inlay hints
+  // ============================================
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.includePackageJsonAutoImports": "on",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.returnTypes.enabled": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "javascript.inlayHints.parameterTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": true,
+  "javascript.inlayHints.returnTypes.enabled": true,
+
+  // ============================================
+  // 🎨 TAILWIND CSS & NPM
   // ============================================
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.includeLanguages": {
     "plaintext": "html",
-    "javascript": "javascriptreact",
-  },
-  "editor.quickSuggestions": {
-    "other": "on",
-    "comments": "off",
-    "strings": "on",
+    "javascript": "javascriptreact"
   },
   "npm.fetchOnlinePackageInfo": true,
 
@@ -119,23 +223,15 @@
   "php.suggest.basic": false,
   "php.validate.enable": true,
   "intelephense.environment.documentRoot": "public",
+  "intelephense.files.associations": ["*.php", "*.blade.php"],
+  "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": true,
+  "intelephense.completion.insertUseDeclaration": true,
+  "intelephense.completion.triggerParameterHints": true,
 
   // ============================================
-  // 🐍 PYTHON & ML BOOST
+  // ☕ JAVA
   // ============================================
-  "python.languageServer": "None",
-  "python.analysis.typeCheckingMode": "basic",
-  "python.analysis.autoImportCompletions": true,
-  "python.analysis.completeFunctionParens": true,
-  "python.analysis.indexing": true,
-  "python.analysis.diagnosticMode": "workspace",
-  "python.analysis.userFileIndexingLimit": 2000,
-  "vsintellicode.python.completionsEnabled": true, // Bisa dimatikan jika merasa tabrakan dengan Cursor Tab
-
   "jdk.jdkhome": "c:\\oracleJdk-25",
-  "[java]": {
-    "editor.defaultFormatter": "Oracle.oracle-java",
-  },
 
   // ============================================
   // 🌐 TRANSLATE & HOVER
@@ -145,11 +241,12 @@
   "editor.hover.enabled": "on",
   "editor.hover.delay": 300,
   "editor.parameterHints.enabled": true,
+  "editor.parameterHints.cycle": true,
   "editor.inlayHints.enabled": "on",
   "editor.inlayHints.padding": true,
 
   // ============================================
-  // 🖥️ SYSTEM & TERMINAL (Windows Paths Kept)
+  // 🖥️ SYSTEM & TERMINAL
   // ============================================
   "workbench.sideBar.location": "right",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
@@ -159,7 +256,28 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.gpuAcceleration": "on",
   "security.workspace.trust.untrustedFiles": "open",
-  "terminal.integrated.shellIntegration.enabled": false,
+  "terminal.integrated.shellIntegration.enabled": true,
+
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "path": "C:\\Users\\rosea\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": { "id": "terminal-cmd" }
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "icon": "terminal-git-bash"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  },
 
   // ============================================
   // 🚀 PRODUCTIVITY & WORKFLOW
@@ -175,12 +293,15 @@
     "*.tsx": "${capture}.ts, ${capture}.js",
     "*.jsx": "${capture}.js",
     "composer.json": "composer.lock",
+    "go.mod": "go.sum, .air.toml",
+    "*.py": "${capture}.pyi",
+    "pyproject.toml": "poetry.lock, requirements*.txt, setup.cfg, .python-version"
   },
 
   "editor.linkedEditing": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
-    "blade": "html",
+    "blade": "html"
   },
   "emmet.triggerExpansionOnTab": true,
 
@@ -192,7 +313,7 @@
   "git.enableSmartCommit": true,
 
   // ============================================
-  // 🐍 AUTO CLOSE TAG
+  // 🏷️ AUTO CLOSE TAG
   // ============================================
   "auto-close-tag.activationOnLanguage": [
     "xml",
@@ -210,43 +331,25 @@
     "liquid",
     "erb",
     "cfml",
-    "HTML (Eex)",
+    "HTML (Eex)"
   ],
 
   // ============================================
-  // 🎯 CODING COMFORT & ANTI-PUSING
+  // 🎯 CODING COMFORT
   // ============================================
   "editor.stickyScroll.enabled": true,
   "editor.stickyScroll.maxLineCount": 5,
   "editor.wordWrap": "on",
-  "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit",
+    "source.organizeImports": "explicit"
   },
   "editor.dragAndDrop": false,
   "explorer.confirmDelete": false,
 
-  "terminal.integrated.profiles.windows": {
-    "PowerShell": {
-      "path": "C:\\Users\\rosea\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe",
-    },
-    "Command Prompt": {
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe",
-      ],
-      "args": [],
-      "icon": { "id": "terminal-cmd" },
-    },
-    "Git Bash": {
-      "source": "Git Bash",
-      "icon": "terminal-git-bash",
-    },
-    "Windows PowerShell": {
-      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-    },
-  },
-  "cursorpyright.analysis.autoImportCompletions": true,
-  "cursorpyright.analysis.diagnosticMode": "workspace",
-  "cursorpyright.analysis.typeCheckingMode": "basic",
+  // ============================================
+  // 🐍 RUFF — Python linter (gantiin flake8 + isort)
+  // ============================================
+  "ruff.enable": true,
+  "ruff.organizeImports": true,
+  "ruff.fixAll": true
 }
