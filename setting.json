@@ -10,23 +10,186 @@
   "vsintellicode.python.completionsEnabled": false,
 
   // ============================================
-  // 🌌 VISUAL CORE (SynthWave84 + Manual Neon Boost)
+  // 🌌 VISUAL CORE — Neon Synthwave
   // ============================================
   "workbench.colorTheme": "SynthWave '84",
-  "workbench.iconTheme": "simple-icons",
+  "workbench.iconTheme": "mizu",
+
   "workbench.colorCustomizations": {
-    "[SynthWave84]": {
-      "editor.lineHighlightBackground": "#2b004655",
-      "editor.lineHighlightBorder": "#ff00ee44",
-      "tab.activeBorder": "#fffb00",
+    "[SynthWave '84]": {
+      // Editor
+      "editor.background": "#0d0015",
+      "editor.lineHighlightBackground": "#ff00ee18",
+      "editor.lineHighlightBorder": "#ff00ee55",
+      "editor.selectionBackground": "#ff00ee33",
+      "editor.selectionHighlightBackground": "#ff00ee18",
+      "editor.wordHighlightBackground": "#00ffe733",
+      "editor.wordHighlightStrongBackground": "#00ffe755",
+      "editor.findMatchBackground": "#fffb0055",
+      "editor.findMatchHighlightBackground": "#fffb0033",
+      "editor.rangeHighlightBackground": "#ff00ee11",
+
+      // Cursor & caret
+      "editorCursor.foreground": "#ff00ee",
+      "editorCursor.background": "#0d0015",
+      "terminalCursor.foreground": "#ff00ee",
+
+      // Tabs
+      "tab.activeBorder": "#ff00ee",
       "tab.activeForeground": "#fffb00",
-      "editor.selectionBackground": "#ffffff30",
-      "terminalCursor.foreground": "#ff00ee"
+      "tab.activeBackground": "#1a0030",
+      "tab.inactiveBackground": "#0d0015",
+      "tab.inactiveForeground": "#9966cc88",
+      "tab.hoverBackground": "#ff00ee22",
+      "tab.unfocusedActiveBorder": "#9900aa",
+
+      // Title bar
+      "titleBar.activeBackground": "#0d0015",
+      "titleBar.activeForeground": "#ff00ee",
+      "titleBar.inactiveBackground": "#0d0015",
+
+      // Sidebar
+      "sideBar.background": "#08000f",
+      "sideBar.foreground": "#cc99ff",
+      "sideBar.border": "#ff00ee22",
+      "sideBarTitle.foreground": "#ff00ee",
+      "sideBarSectionHeader.background": "#1a0030",
+      "sideBarSectionHeader.foreground": "#fffb00",
+      "sideBarSectionHeader.border": "#ff00ee33",
+
+      // Activity bar
+      "activityBar.background": "#08000f",
+      "activityBar.foreground": "#ff00ee",
+      "activityBar.inactiveForeground": "#9966cc66",
+      "activityBar.border": "#ff00ee22",
+      "activityBarBadge.background": "#ff00ee",
+      "activityBarBadge.foreground": "#0d0015",
+
+      // Status bar
+      "statusBar.background": "#0d0015",
+      "statusBar.foreground": "#ff00ee",
+      "statusBar.border": "#ff00ee44",
+      "statusBar.debuggingBackground": "#ff00ee",
+      "statusBar.debuggingForeground": "#0d0015",
+      "statusBarItem.hoverBackground": "#ff00ee22",
+      "statusBarItem.remoteBackground": "#ff00ee",
+      "statusBarItem.remoteForeground": "#0d0015",
+
+      // Panel (terminal)
+      "panel.background": "#08000f",
+      "panel.border": "#ff00ee33",
+      "panelTitle.activeBorder": "#ff00ee",
+      "panelTitle.activeForeground": "#fffb00",
+      "panelTitle.inactiveForeground": "#9966cc88",
+
+      // Scrollbar — custom neon
+      "scrollbar.shadow": "#ff00ee00",
+      "scrollbarSlider.background": "#ff00ee33",
+      "scrollbarSlider.hoverBackground": "#ff00ee66",
+      "scrollbarSlider.activeBackground": "#ff00ee99",
+
+      // Input & dropdown
+      "input.background": "#1a0030",
+      "input.border": "#ff00ee44",
+      "input.foreground": "#e0d0ff",
+      "input.placeholderForeground": "#9966cc66",
+      "dropdown.background": "#1a0030",
+      "dropdown.border": "#ff00ee44",
+
+      // Buttons
+      "button.background": "#ff00ee",
+      "button.foreground": "#0d0015",
+      "button.hoverBackground": "#cc00bb",
+
+      // List & tree
+      "list.activeSelectionBackground": "#ff00ee33",
+      "list.activeSelectionForeground": "#fffb00",
+      "list.hoverBackground": "#ff00ee18",
+      "list.hoverForeground": "#e0d0ff",
+      "list.inactiveSelectionBackground": "#ff00ee22",
+      "list.highlightForeground": "#ff00ee",
+
+      // Badges & notifications
+      "badge.background": "#ff00ee",
+      "badge.foreground": "#0d0015",
+      "notificationCenterHeader.background": "#0d0015",
+      "notifications.background": "#1a0030",
+      "notifications.border": "#ff00ee44",
+
+      // Git decorations
+      "gitDecoration.addedResourceForeground": "#00ffe7",
+      "gitDecoration.modifiedResourceForeground": "#fffb00",
+      "gitDecoration.deletedResourceForeground": "#ff00ee",
+      "gitDecoration.untrackedResourceForeground": "#aa99ff",
+      "gitDecoration.ignoredResourceForeground": "#9966cc44",
+
+      // Breadcrumb
+      "breadcrumb.background": "#0d0015",
+      "breadcrumb.foreground": "#9966cc",
+      "breadcrumb.activeSelectionForeground": "#ff00ee",
+
+      // Editor widget (autocomplete popup)
+      "editorWidget.background": "#1a0030",
+      "editorWidget.border": "#ff00ee55",
+      "editorSuggestWidget.background": "#1a0030",
+      "editorSuggestWidget.border": "#ff00ee55",
+      "editorSuggestWidget.foreground": "#e0d0ff",
+      "editorSuggestWidget.highlightForeground": "#ff00ee",
+      "editorSuggestWidget.selectedBackground": "#ff00ee33",
+
+      // Peek view
+      "peekView.border": "#ff00ee",
+      "peekViewEditor.background": "#0d0015",
+      "peekViewResult.background": "#08000f",
+      "peekViewTitle.background": "#1a0030",
+
+      // Indent guides
+      "editorIndentGuide.background1": "#ff00ee22",
+      "editorIndentGuide.activeBackground1": "#ff00ee88",
+
+      // Bracket match
+      "editorBracketMatch.background": "#ff00ee33",
+      "editorBracketMatch.border": "#ff00ee",
+
+      // Error / warning squiggles
+      "editorError.foreground": "#ff4488",
+      "editorWarning.foreground": "#fffb00",
+      "editorInfo.foreground": "#00ffe7"
     }
   },
 
   // ============================================
-  // ⌨️ TYPOGRAPHY (Clean & Expensive)
+  // ✨ SEMANTIC TOKEN HIGHLIGHTING — Neon per token
+  // ============================================
+  "editor.semanticHighlighting.enabled": true,
+  "editor.semanticTokenColorCustomizations": {
+    "[SynthWave '84]": {
+      "rules": {
+        "class": { "foreground": "#ff00ee", "fontStyle": "bold" },
+        "interface": { "foreground": "#ff79c6", "fontStyle": "italic" },
+        "function": { "foreground": "#00ffe7" },
+        "method": { "foreground": "#00ffe7" },
+        "variable": { "foreground": "#e0d0ff" },
+        "variable.readonly": { "foreground": "#fffb00" },
+        "parameter": { "foreground": "#ffb86c", "fontStyle": "italic" },
+        "property": { "foreground": "#cc99ff" },
+        "type": { "foreground": "#8be9fd", "fontStyle": "italic" },
+        "namespace": { "foreground": "#ff79c6" },
+        "decorator": { "foreground": "#fffb00", "fontStyle": "italic bold" },
+        "keyword": { "foreground": "#ff00ee", "fontStyle": "bold" },
+        "string": { "foreground": "#f1fa8c" },
+        "number": { "foreground": "#bd93f9" },
+        "comment": { "foreground": "#6b7a8f", "fontStyle": "italic" },
+        "macro": { "foreground": "#ff5555", "fontStyle": "bold" },
+        "enumMember": { "foreground": "#50fa7b" },
+        "selfParameter": { "foreground": "#ff00ee", "fontStyle": "italic" },
+        "builtinConstant": { "foreground": "#bd93f9", "fontStyle": "bold" }
+      }
+    }
+  },
+
+  // ============================================
+  // ⌨️ TYPOGRAPHY
   // ============================================
   "editor.fontFamily": "'JetBrains Mono', 'FiraCode Nerd Font', Consolas, monospace",
   "editor.autoIndent": "advanced",
@@ -42,18 +205,72 @@
     "textMateRules": [
       {
         "scope": "comment",
-        "settings": {
-          "fontStyle": "italic",
-          "foreground": "#6b7a8f"
-        }
+        "settings": { "fontStyle": "italic", "foreground": "#6b7a8f" }
       },
       {
         "scope": "keyword",
-        "settings": {
-          "fontStyle": "italic bold"
-        }
+        "settings": { "fontStyle": "italic bold", "foreground": "#ff00ee" }
+      },
+      {
+        "scope": "keyword.operator",
+        "settings": { "foreground": "#ff79c6", "fontStyle": "" }
+      },
+      {
+        "scope": "string",
+        "settings": { "foreground": "#f1fa8c" }
+      },
+      {
+        "scope": "constant.numeric",
+        "settings": { "foreground": "#bd93f9" }
+      },
+      {
+        "scope": "entity.name.function",
+        "settings": { "foreground": "#00ffe7", "fontStyle": "bold" }
+      },
+      {
+        "scope": "entity.name.class",
+        "settings": { "foreground": "#ff00ee", "fontStyle": "bold" }
+      },
+      {
+        "scope": "variable.parameter",
+        "settings": { "foreground": "#ffb86c", "fontStyle": "italic" }
+      },
+      {
+        "scope": "support.function",
+        "settings": { "foreground": "#00ffe7" }
+      },
+      {
+        "scope": "storage.type",
+        "settings": { "foreground": "#8be9fd", "fontStyle": "italic" }
+      },
+      {
+        "scope": "meta.decorator",
+        "settings": { "foreground": "#fffb00", "fontStyle": "italic" }
       }
     ]
+  },
+
+  // ============================================
+  // 🌈 RAINBOW INDENTATION
+  // ============================================
+  "indenticator.color.dark": "#ff00ee44",
+  "indenticator.color.light": "#ff00ee22",
+  "indenticator.width": 1,
+  "indenticator.showHighlight": true,
+  "indenticator.style": "solid",
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#ff00ee",
+    "editorBracketHighlight.foreground2": "#00ffe7",
+    "editorBracketHighlight.foreground3": "#fffb00",
+    "editorBracketHighlight.foreground4": "#bd93f9",
+    "editorBracketHighlight.foreground5": "#ff79c6",
+    "editorBracketHighlight.foreground6": "#50fa7b",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#ff5555"
   },
 
   // ============================================
@@ -63,8 +280,10 @@
   "workbench.editor.editorActionsLocation": "hidden",
   "breadcrumbs.enabled": false,
   "editor.minimap.enabled": false,
-  "editor.scrollbar.vertical": "hidden",
-  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "auto",
+  "editor.scrollbar.horizontal": "auto",
+  "editor.scrollbar.verticalScrollbarSize": 6,
+  "editor.scrollbar.horizontalScrollbarSize": 6,
   "workbench.tree.indent": 22,
   "workbench.tree.renderIndentGuides": "always",
   "explorer.compactFolders": false,
@@ -80,14 +299,18 @@
   "workbench.list.smoothScrolling": true,
   "editor.renderLineHighlight": "all",
 
+  // Synthwave84 glow — aktifin via command palette:
+  // "Synthwave '84: Enable Neon Dreams"
+  // (perlu restart & allow custom CSS/JS di Cursor)
+  "synthwave84.brightness": 0.85,
+  "synthwave84.disableGlow": false,
+
   // ============================================
-  // ⚡ FORMATTING (Per-Language, No Conflict)
+  // ⚡ FORMATTING (Per-Language)
   // ============================================
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "files.autoSave": "afterDelay",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairsHorizontal": "active",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
@@ -102,19 +325,13 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
-    }
+    "editor.codeActionsOnSave": { "source.organizeImports": "explicit" }
   },
-
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
-    }
+    "editor.codeActionsOnSave": { "source.organizeImports": "explicit" }
   },
-
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
     "editor.formatOnSave": true
@@ -123,13 +340,12 @@
     "editor.defaultFormatter": "shufo.vscode-blade-formatter",
     "editor.formatOnSave": true
   },
-
   "[java]": {
     "editor.defaultFormatter": "Oracle.oracle-java"
   },
 
   // ============================================
-  // 🔍 INTELLISENSE & AUTOCOMPLETE (Rich Suggestions)
+  // 🔍 INTELLISENSE & AUTOCOMPLETE
   // ============================================
   "editor.suggestOnTriggerCharacters": true,
   "editor.quickSuggestionsDelay": 0,
@@ -145,12 +361,11 @@
   },
 
   // ============================================
-  // 🐍 PYTHON & ML — cursorpyright + rich hints
+  // 🐍 PYTHON & ML
   // ============================================
   "python.languageServer": "None",
   "python.analysis.autoImportCompletions": true,
   "python.analysis.completeFunctionParens": true,
-
   "cursorpyright.analysis.autoImportCompletions": true,
   "cursorpyright.analysis.completeFunctionParens": true,
   "cursorpyright.analysis.diagnosticMode": "workspace",
@@ -162,7 +377,7 @@
   "cursorpyright.analysis.inlayHints.callArgumentNames": true,
 
   // ============================================
-  // 🐹 GOLANG — gopls full docs + placeholders
+  // 🐹 GOLANG
   // ============================================
   "go.useLanguageServer": true,
   "go.toolsManagement.autoUpdate": true,
@@ -190,7 +405,7 @@
   },
 
   // ============================================
-  // 🌐 JAVASCRIPT & TYPESCRIPT — full inlay hints
+  // 🌐 JAVASCRIPT & TYPESCRIPT
   // ============================================
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.suggest.autoImports": true,
@@ -347,7 +562,7 @@
   "explorer.confirmDelete": false,
 
   // ============================================
-  // 🐍 RUFF — Python linter (gantiin flake8 + isort)
+  // 🐍 RUFF — Python linter
   // ============================================
   "ruff.enable": true,
   "ruff.organizeImports": true,
