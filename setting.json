@@ -13,7 +13,7 @@
   // 🌌 VISUAL CORE — Neon Synthwave
   // ============================================
   "workbench.colorTheme": "SynthWave '84",
-  "workbench.iconTheme": "mizu",
+  "workbench.iconTheme": "simple-icons",
 
   "workbench.colorCustomizations": {
     "[SynthWave '84]": {
@@ -372,9 +372,9 @@
   "cursorpyright.analysis.typeCheckingMode": "basic",
   "cursorpyright.analysis.indexing": true,
   "cursorpyright.analysis.userFileIndexingLimit": 2000,
-  "cursorpyright.analysis.inlayHints.variableTypes": true,
-  "cursorpyright.analysis.inlayHints.functionReturnTypes": true,
-  "cursorpyright.analysis.inlayHints.callArgumentNames": true,
+  "cursorpyright.analysis.inlayHints.variableTypes": false,
+  "cursorpyright.analysis.inlayHints.functionReturnTypes": false,
+  "cursorpyright.analysis.inlayHints.callArgumentNames": false,
 
   // ============================================
   // 🐹 GOLANG
@@ -388,9 +388,9 @@
   "go.formatTool": "goimports",
   "go.testFlags": ["-v", "-count=1"],
   "go.coverOnSave": false,
-  "go.inlayHints.assignVariableTypes": true,
-  "go.inlayHints.compositeLiteralFields": true,
-  "go.inlayHints.parameterNames": true,
+  "go.inlayHints.assignVariableTypes": false,
+  "go.inlayHints.compositeLiteralFields": false,
+  "go.inlayHints.parameterNames": false,
   "gopls": {
     "ui.completion.usePlaceholders": true,
     "ui.documentation.hoverKind": "FullDocumentation",
@@ -410,17 +410,17 @@
   "typescript.suggest.completeFunctionCalls": true,
   "typescript.suggest.autoImports": true,
   "typescript.preferences.includePackageJsonAutoImports": "on",
-  "typescript.inlayHints.parameterNames.enabled": "all",
-  "typescript.inlayHints.parameterTypes.enabled": true,
-  "typescript.inlayHints.variableTypes.enabled": true,
-  "typescript.inlayHints.returnTypes.enabled": true,
-  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.parameterNames.enabled": "none",
+  "typescript.inlayHints.parameterTypes.enabled": false,
+  "typescript.inlayHints.variableTypes.enabled": false,
+  "typescript.inlayHints.returnTypes.enabled": false,
+  "typescript.inlayHints.enumMemberValues.enabled": false,
   "javascript.suggest.completeFunctionCalls": true,
   "javascript.suggest.autoImports": true,
-  "javascript.inlayHints.parameterNames.enabled": "all",
-  "javascript.inlayHints.parameterTypes.enabled": true,
-  "javascript.inlayHints.variableTypes.enabled": true,
-  "javascript.inlayHints.returnTypes.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "none",
+  "javascript.inlayHints.parameterTypes.enabled": false,
+  "javascript.inlayHints.variableTypes.enabled": false,
+  "javascript.inlayHints.returnTypes.enabled": false,
 
   // ============================================
   // 🎨 TAILWIND CSS & NPM
@@ -457,7 +457,7 @@
   "editor.hover.delay": 300,
   "editor.parameterHints.enabled": true,
   "editor.parameterHints.cycle": true,
-  "editor.inlayHints.enabled": "on",
+  "editor.inlayHints.enabled": "off",
   "editor.inlayHints.padding": true,
 
   // ============================================
