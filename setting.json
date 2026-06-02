@@ -368,10 +368,12 @@
   "python.analysis.completeFunctionParens": true,
   "cursorpyright.analysis.autoImportCompletions": true,
   "cursorpyright.analysis.completeFunctionParens": true,
-  "cursorpyright.analysis.diagnosticMode": "workspace",
+  "cursorpyright.analysis.diagnosticMode": "openFilesOnly",
   "cursorpyright.analysis.typeCheckingMode": "basic",
   "cursorpyright.analysis.indexing": true,
   "cursorpyright.analysis.userFileIndexingLimit": 2000,
+  "python.analysis.exclude": ["**/node_modules", "**/.venv", "**/venv", "**/env", "**/__pycache__", "**/dist", "**/build", "**/.conda"],
+  "cursorpyright.analysis.exclude": ["**/node_modules", "**/.venv", "**/venv", "**/env", "**/__pycache__", "**/dist", "**/build", "**/.conda"],
   "cursorpyright.analysis.inlayHints.variableTypes": false,
   "cursorpyright.analysis.inlayHints.functionReturnTypes": true,
   "cursorpyright.analysis.inlayHints.callArgumentNames": true,
@@ -531,22 +533,11 @@
   // 🏷️ AUTO CLOSE TAG
   // ============================================
   "auto-close-tag.activationOnLanguage": [
-    "xml",
-    "php",
-    "blade",
-    "ejs",
-    "jinja",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "plaintext",
-    "markdown",
-    "vue",
-    "liquid",
-    "erb",
-    "cfml",
-    "HTML (Eex)"
+    "xml", "php", "blade", "ejs", "jinja",
+    "javascript", "javascriptreact",
+    "typescript", "typescriptreact",
+    "plaintext", "markdown", "vue",
+    "liquid", "erb", "cfml", "HTML (Eex)"
   ],
 
   // ============================================
